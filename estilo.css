@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Gowun Dodum';
+
+  box-sizing: border-box;
+
+  transition: all 0.2s;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: absolute;
+  background: linear-gradient(to right, #00343b, #6b093f);
+}
+
+header {
+  margin-top: 4rem;
+  padding-left: 4rem;
+}
+
+header h1 {
+  color: white;
+
+  font-weight: lighter;
+  font-family: 'Pacifico';
+
+  font-size: 4rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.card {
+  width: max-content;
+  height: max-content;
+  padding: 1.5rem;
+
+  background-color: #FFF;
+  border-radius: 8px;
+}
+
+.card #mensagem-de-retorno {
+  margin-bottom: 2rem;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.card #mensagem-de-retorno.sucesso {
+  color: mediumseagreen;
+}
+
+.card #mensagem-de-retorno.erro {
+  color: firebrick;
+}
+
+form label, .card form input {
+  font-size: 1.5rem;
+}
+
+form legend {
+  font-size: 2.5rem;
+  font-weight: bold;
+  
+  margin-bottom: 1.5rem;
+}
+
+form div.grupo {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 1.5rem;
+}
+
+form div.grupo input {
+  padding: .5rem 1rem;
+
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(111, 111, 111, 0.3);
+}
+
+form div.grupo input:focus {
+  filter: brightness(1.6);
+}
+
+form button {
+  width: 100%;
+
+  padding: 1rem;
+  margin-top: 2rem;
+
+  color: white;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 8px;
+  background-color: #7b4397;
+}
+
+table {
+  width: calc(100% - 4rem);
+  max-width: 1000px;
+
+  margin: 0 auto;
+  padding: .5rem 2rem;
+  background-color: white;
+
+  border-radius: 8px;
+}
+
+td, th {
+  padding: .5rem;
+  text-align: left;
+}
+
+#pagina-listar-usuarios {
+  display: flex;
+  flex-direction: column;
+}
+
+#pagina-listar-usuarios form {
+  max-width: 1000px;
+  
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  gap: .5rem;
+
+  align-items: center;
+
+  height: max-content;
+
+  width: calc(100% - 4rem);
+
+  margin: 0 auto 0.5rem;
+}
+
+#pagina-listar-usuarios form.limpar-filtro {
+  display: flex;
+}
+
+#pagina-listar-usuarios form.limpar-filtro button {
+  margin-left: auto;
+
+  color: black;
+
+  background-color: #FAFAFA;
+}
+
+#pagina-listar-usuarios form .grupo {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+
+  margin-bottom: 0;
+}
+
+#pagina-listar-usuarios form .grupo label {
+  margin-right: .5rem;
+
+  color: white;
+}
+
+#pagina-listar-usuarios form .grupo input {
+  background-color: rgba(255, 255, 255, .7)
+}
+
+#pagina-listar-usuarios form button {
+  width: unset;
+  height: min-content;
+
+  margin-top: 0;
+  padding: .5rem;
+
+  font-size: 1.15rem;
+}
